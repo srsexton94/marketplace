@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   styleUrls: ['./app.component.scss'],
   template: `
-    <div class="toolbar" role="banner">
-      <h1>{{ title }} app is running!</h1>
-    </div>
+    <app-header [headerText]="title"></app-header>
+    <app-main></app-main>
+    <app-menu></app-menu>
   `
 })
 export class AppComponent {
